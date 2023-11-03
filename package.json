@@ -1,0 +1,22 @@
+{
+  "name": "dyno-widgets",
+  "version": "1.0.0",
+  "description": "Framework agnostic server side rendered components. Originally designed for use with Svelte.",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fronrich/dyno-widgets.git"
+  },
+  "keywords": [
+    "Svelte"
+  ],
+  "author": "Fronrich Puno",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fronrich/dyno-widgets/issues"
+  },
+  "homepage": "https://github.com/fronrich/dyno-widgets#readme"
+}
