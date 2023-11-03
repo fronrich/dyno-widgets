@@ -18,5 +18,15 @@
   "bugs": {
     "url": "https://github.com/fronrich/dyno-widgets/issues"
   },
-  "homepage": "https://github.com/fronrich/dyno-widgets#readme"
+  "homepage": "https://github.com/fronrich/dyno-widgets#readme",
+  "devDependencies": {
+    "@types/svelte-range-slider-pips": "^2.0.2",
+    "bun-types": "latest",
+    "svelte": "^4.2.2",
+    "svelte-range-slider-pips": "^2.2.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {}
 }
