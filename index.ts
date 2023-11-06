@@ -1,4 +1,3 @@
-console.log("Hello via Bun!");
 import type {
   HTMLInputAttributes,
   HTMLSelectAttributes,
@@ -57,18 +56,19 @@ export type DynoWidgetProps = Partial<{
   users: User[];
   industry: Industry;
   message: string;
-  isSender: boolean;
+  senderUuid: string;
   banner: string;
   rating: number;
   tags: string[];
   title: string;
   business: string;
   content: string;
+  header: string;
 }> &
   User;
 
 type Widget = {
-  index: number;
+  index?: number;
 
   // once set this cannot be changed
   uuid?: string;
@@ -78,8 +78,10 @@ type Widget = {
   timestampCreated?: string;
   timestampModified?: string;
 
-  // context that helps the llm understand what this Widget is being used for
-  description: string;
+  /**
+   * context that helps the LLM understand what this Widget represents
+   */
+  description?: string;
 
   componentName: ComponentName;
   props: DynoWidgetProps;
@@ -95,7 +97,7 @@ export interface InputFormWidget extends Widget {
 export interface ChatWidget extends Widget {
   props: {
     message: string;
-    isSender: boolean;
+    senderUuid: string;
   };
 }
 
