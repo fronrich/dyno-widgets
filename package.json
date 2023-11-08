@@ -1,6 +1,6 @@
 {
   "name": "dyno-widgets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Framework agnostic server side rendered components. Originally designed for use with Svelte.",
   "main": "index.ts",
   "scripts": {
